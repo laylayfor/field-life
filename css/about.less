@@ -1,0 +1,189 @@
+@import url(common.less);
+.about {
+    padding: 60px 0;
+    .container {
+        .about-img {
+            
+            img {
+                width: 100%;
+            }
+        }
+        .about-info {
+            h3 {
+                text-align: left;
+                color: @color1;
+                font-size: 16px;
+                
+            }
+            p {
+                color: #000;
+                margin: 20px 0;
+                font-size: 13px;
+                
+            }
+        }
+    }
+}
+// testimonial
+@keyframes testimonial {
+    0% {
+
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.testimonial {
+    background: url(../images/drink.jpg) no-repeat;
+    background-size: 100% 100%;
+    .container {
+        padding: 80px 15px;
+        h3 {
+            color: @color1;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 150px 10px 150px;
+            color: #fff;
+            text-align: center;
+        }
+        .info-img {
+            position: relative;
+            margin: 10px auto;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            .info-img-box {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 120px;
+                height: 60px;
+                animation: testimonial 10s steps(2) infinite forwards;
+                span {
+                    display: block;
+                    float: left;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+        .name {
+            position: relative;
+            width: 125px;
+            height: 26px;
+            margin: 0 auto;
+            overflow: hidden;
+            .name-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                text-align: center;
+                animation: testimonial 10s steps(2) infinite forwards;
+                span {
+                    float: left;
+                    width: 125px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+        }
+        h4 {
+            margin-top: 5px;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+// team
+@keyframes team {
+    0% {
+
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+}
+.team {
+    margin: 80px 0;
+    .container {
+        .team-header {
+            margin-bottom: 50px;
+            h2 {
+                color: @color1;
+                font-size: 24px;
+                
+            }
+        }
+        .team-con {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            .team-con-box {
+                display: flex;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                float: left;
+                width: 400%;
+                animation: team 10s steps(1) infinite;
+                animation-play-state:running;
+                [class^="team"] {
+                    flex: 25%;
+                    padding: 0 16px;
+                    img {
+                        width: 100%;
+                    }
+                    h3 {
+                        margin: 15px 0;
+                        font-size: 19px;
+                        color: @color1;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// media
+@media screen and (max-width: 768px) {
+    .about {
+        .container {
+            .about-img {
+                float: left;
+                width: 50%;
+            }
+        }
+    }
+    .testimonial {
+        .container {
+            padding: 35px 15px 0 15px;
+            p {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    .team {
+        margin: 30px 0;
+        .container {
+            .team-header {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

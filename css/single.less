@@ -1,0 +1,100 @@
+@import url(common.less);
+
+// content
+.content {
+    margin-top: 50px;
+    .container {
+        .con-left {
+            img {
+                width: 100%;
+            }
+            h3 {
+                margin-top: 30px;
+                text-align: left;
+                color: @color1;
+                font-size: 20px;
+            }
+            a {
+                h4 {
+                    margin-top: 30px;
+                    text-align: left;
+                    font-size: 16px;
+                    color: #000;
+                }
+            }
+            p {
+                margin-top: 20px;
+            }
+            .team {
+                .row {
+                    margin-top: 0;
+                    [class^="teams-items"] {
+                        margin-top: 30px;
+                        .teams-img {
+                            height: 100%;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .teams-info {
+                            h4 {
+                                font-size: 18px;
+                                text-align: left;
+                                color: @color1;
+                            }
+                            p {
+                                margin-top: 20px;
+                            }
+                            h5 {
+                                text-align: right;
+                                font-size: 18px;
+                                color: @color1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .con-right {
+            div {
+                text-align: left;
+                h3 {
+                    font-size: 18px;
+                    color: @color1;
+                }
+                ul {
+                    li {
+                        margin-top: 20px;
+                        span {
+                            color: @color1;
+                        }
+                        a {
+                            display: inline-block;
+                            padding-left: 10px;
+                            color: #000;
+                        }
+                        &:hover a {
+                            transform: translateX(10px);
+                            color: @color1;
+                        }
+                    }
+                    
+                }
+            }
+            .archieves {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+.footer {
+    margin-top: 20px;
+}
