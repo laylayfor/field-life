@@ -72,6 +72,7 @@ li {
   font-size: 32px;
   line-height: 32px;
   color: #2AD2C9;
+  z-index: 999;
 }
 header {
   height: 118px;
