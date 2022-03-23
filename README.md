@@ -11,5 +11,5 @@
 
 ## 2.项目效果图
 
-![](D:\web前端\test\mine\FIELD LIFE\index.png)
+![](index.png)
 
